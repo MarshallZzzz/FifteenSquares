@@ -21,15 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button shuffle = findViewById(R.id.shuffle);
-        shuffle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shuffleBoard();
-            }
-        });
-
-
         GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
         //sets each button with a click listener
         for (int row = 0; row < BOARD_SIZE; row++) {
